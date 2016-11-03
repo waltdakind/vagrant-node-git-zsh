@@ -11,8 +11,7 @@ Pre-requisites:
 
 From a terminal prompt:
 
-* `git clone git@github.com:waltdakind/vagrant-node-git-zsh.git && cd 
-`
+* `git clone git@github.com:waltdakind/vagrant-node-git-zsh.git && cd vagrant-node-git-zsh`
  
 * `vagrant up`
 
