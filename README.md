@@ -1,24 +1,28 @@
 # vagrant-node-git-zsh
-Basic Ubuntu box -- Vagrantfile and shell script to install Node, Git, Zsh (with Oh-My-Zsh) and a shared folder
+## Basic Ubuntu box -- Vagrantfile and shell script to install Node, Git, Zsh (with Oh-My-Zsh) and a shared folder
 
 Pre-requisites:
+
 Vagrant
+
 Virtualbox
 
 Basic use:
 
 From a terminal prompt:
 
-git clone git@github.com:waltdakind/vagrant-node-git-zsh.git
+* `git clone git@github.com:waltdakind/vagrant-node-git-zsh.git`
  
-vagrant up
+* `vagrant up`
 
-vagrant ssh
+* `vagrant ssh`
 
-To reprovision the vagrant box, just run --      vagrant provision
+* Ctrl-D to logout followed by `vagrant suspend` (save VM state)
+or `vagrant halt` ( power off VM )
 
+* To re-provision the vagrant box, just run --      `vagrant provision`
 
-# If it was succesful, this installs node 7 with build-essential, git and zsh using a theme from Oh-My-Zsh.
+###If the build was succesful, your virtualbox has node 7 with build-essential, git and zsh using a theme from Oh-My-Zsh.
 
 If using Mac or Windows host, remove the crlf configuration for git.config in bootstrap.sh.
 
