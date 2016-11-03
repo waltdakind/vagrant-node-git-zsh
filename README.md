@@ -1,13 +1,13 @@
 # vagrant-node-git-zsh
-## Basic Ubuntu box -- Vagrantfile and shell script to install Node, Git, Zsh (with Oh-My-Zsh) and a shared folder
+### Basic Ubuntu box -- Vagrantfile and shell script to install Node, Git, Zsh (with Oh-My-Zsh) and a shared folder
 
 Pre-requisites:
 
-Vagrant
+####Vagrant
 
-Virtualbox
+####Virtualbox
 
-Basic use:
+####Basic use:
 
 From a terminal prompt:
 
