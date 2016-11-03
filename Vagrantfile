@@ -13,11 +13,19 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "ubuntu/trusty64"
+  # Get rid of the annoying although insignificant "stdin: is not a tty" error 
   config.vm.provision "fix-no-tty", type: "shell" do |s|
     s.privileged = false
     s.inline = "sudo sed -i '/tty/!s/mesg n/tty -s \\&\\& mesg n/' /root/.profile"
   end  
+  #script to set up vagrant with git, zsh, and node 
+  config.vm.provision :shell, inline: "apt-get -y install zsh"
+    # Change the vagrant user's shell to use zsh
+  config.vm.provision :shell, inline: "chsh -s /bin/zsh vagrant"
   config.vm.provision :shell, path: "bootstrap.sh"
+
+
+  
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
