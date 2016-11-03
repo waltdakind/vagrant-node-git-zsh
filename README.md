@@ -7,11 +7,12 @@ Pre-requisites:
 
 ####Virtualbox
 
-####Basic use:
+##Basic use:
 
 From a terminal prompt:
 
-* `git clone git@github.com:waltdakind/vagrant-node-git-zsh.git`
+* `git clone git@github.com:waltdakind/vagrant-node-git-zsh.git && cd 
+`
  
 * `vagrant up`
 
