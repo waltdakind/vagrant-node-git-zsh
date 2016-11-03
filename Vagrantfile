@@ -24,8 +24,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, inline: "chsh -s /bin/zsh vagrant"
   config.vm.provision :shell, path: "bootstrap.sh"
 
-
-  
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
@@ -80,8 +78,6 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
   # config.vm.provision "shell", inline: <<-SHELL
   # apt-get update
-  # apt-get install -y git zsh
-
 
   # SHELL
 end

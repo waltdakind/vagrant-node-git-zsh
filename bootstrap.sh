@@ -2,7 +2,6 @@
   #  echo '~~~ Apt-get update, upgrade and autoremove ~~~'
   #  echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
   #  echo -e ' \n '
-  #  echo -e ' \n '
   # sudo apt-get update 
   # sudo apt-get upgrade -y
   # sudo apt-get autoremove -y
@@ -48,15 +47,14 @@ fi
    echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
    if [ ! -n "$(ls -A /home/vagrant/.oh-my-zsh)" ] 
    	then
-        echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
-        echo "Attempting to Install Oh-My-Zsh..."
-        echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
-        sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+      echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+         echo "Attempting to Install Oh-My-Zsh..."
+         echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+         sudo sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
    	else
         echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
         echo "Oh-My-Zsh is already installed"
         echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
-        sudo chsh -s $(which zsh)
    	fi
        echo -e ' \n '
 
@@ -101,15 +99,15 @@ fi
           echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
           echo "Node modules already present"
           echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
-          echo -e ' \n '
+
 else
           mkdir /home/vagrant/node_modules
           echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
           echo "Creating node modules in home directory..."
           echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
-          echo -e ' \n '
-fi
 
+fi
+          echo -e ' \n '
 
    case $SHELL in
 */zsh) 
@@ -128,3 +126,6 @@ fi
   echo 'Unabe to detect current shell -- '
 esac
           echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+   echo -e ' \n '
+   sudo chsh -s $(which zsh)
+
