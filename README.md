@@ -15,7 +15,7 @@ vagrant up
 
 vagrant ssh
 
-
+To reprovision the vagrant box, just run --      vagrant provision
 
 
 # If it was succesful, this installs node 7 with build-essential, git and zsh using a theme from Oh-My-Zsh.
