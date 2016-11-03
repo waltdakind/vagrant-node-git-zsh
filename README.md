@@ -3,9 +3,9 @@
 
 Pre-requisites:
 
-####Vagrant
+#### [Vagrant](https://www.vagrantup.com/ "Vagrant website")
 
-####Virtualbox
+#### [Virtualbox](https://www.virtualbox.org/wiki/Downloads "Oracle's Virtualbox Website")
 
 ##Basic use:
 
@@ -22,7 +22,7 @@ or `vagrant halt` ( power off VM )
 
 * To re-provision the vagrant box, just run --      `vagrant provision`
 
-###If the build was succesful, your virtualbox has node 7 with build-essential, git and zsh using a theme from Oh-My-Zsh.
+###If the build was succesful, your virtualbox has node 7 with build-essential, git and zsh using a theme from [Oh-My-Zsh](http://ohmyz.sh/ "Oh-My-Zsh Website").
 
 If using Mac or Linux host, remove the crlf configuration for git.config in bootstrap.sh.
 
