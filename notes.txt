@@ -1,0 +1,3 @@
+Article that helped fixing the switch from bash to zsh:
+
+http://stackoverflow.com/questions/25763017/install-oh-my-zsh-on-a-vagrant-box-as-part-of-the-bootstrap-process

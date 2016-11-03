@@ -24,8 +24,8 @@ else
           # can be disabled in Mac/Linux hosts
           git config --global core.autocrlf true
          # change the lines below and uncomment to set up for your name and email address
-         # git config --global user.name = "Walter Mattingly"
-         # git config --global user.email = "waltdakind@gmail.com"
+         git config --global user.name = "Walter Mattingly"
+         git config --global user.email = "waltdakind@gmail.com"
 fi
    echo -e ' \n '
 
@@ -50,7 +50,7 @@ fi
       echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
          echo "Attempting to Install Oh-My-Zsh..."
          echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
-         sudo sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+         su vagrant sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
    	else
         echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
         echo "Oh-My-Zsh is already installed"
@@ -96,14 +96,13 @@ fi
 
          if [ ! -n "$(ls -A /home/vagrant/node_modules)" ]
       then
-          echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
-          echo "Node modules already present"
-          echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
-
-else
           mkdir /home/vagrant/node_modules
           echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
           echo "Creating node modules in home directory..."
+          echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+else
+          echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+          echo "Node modules already present"
           echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
 
 fi
@@ -118,14 +117,15 @@ fi
   echo ' Bash is current shell -- '
   echo ' running -- chsh -s $(which zsh)  '
   echo ' to switch to zsh '
-   chsh -s $(which zsh)
+  chsh -s $(which zsh)
 
    ;;
 
 *)
   echo 'Unabe to detect current shell -- '
+  sudo chsh -s $(which zsh)
 esac
           echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
    echo -e ' \n '
-   sudo chsh -s $(which zsh)
+
 
