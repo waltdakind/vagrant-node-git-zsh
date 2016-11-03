@@ -24,7 +24,7 @@ or `vagrant halt` ( power off VM )
 
 ###If the build was succesful, your virtualbox has node 7 with build-essential, git and zsh using a theme from Oh-My-Zsh.
 
-If using Mac or Windows host, remove the crlf configuration for git.config in bootstrap.sh.
+If using Mac or Linux host, remove the crlf configuration for git.config in bootstrap.sh.
 
 
 
