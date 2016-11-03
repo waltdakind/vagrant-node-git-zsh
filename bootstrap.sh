@@ -1,10 +1,10 @@
-  #  echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
-  #  echo '~~~ Apt-get update, upgrade and autoremove ~~~'
-  #  echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
-  #  echo -e ' \n '
-  # sudo apt-get update 
-  # sudo apt-get upgrade -y
-  # sudo apt-get autoremove -y
+   echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+   echo '~~~ Apt-get update, upgrade and autoremove ~~~'
+   echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+   echo -e ' \n '
+  sudo apt-get update 
+  sudo apt-get upgrade -y
+  sudo apt-get autoremove -y
    echo -e ' \n '
    echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
    echo '~~~Git and Zsh ~~~'
