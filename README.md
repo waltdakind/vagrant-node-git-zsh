@@ -1,5 +1,5 @@
 # vagrant-node-git-zsh
-### Basic Ubuntu box -- Vagrantfile and shell script to install Node, Git, Zsh (with Oh-My-Zsh) and a shared folder
+### Creates a Linux-based Virtualbox running [Ubuntu 14.04.5 LTS](http://releases.ubuntu.com/trusty/ "Trusty Tahr")    Vagrantfile and shell script to install Node, Git, Zsh (with Oh-My-Zsh) and mount a shared folder ("share") in the vagrant user's home folder.
 
 Pre-requisites:
 
