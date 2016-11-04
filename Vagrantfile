@@ -22,6 +22,8 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, inline: "apt-get -y install zsh"
     # Change the vagrant user's shell to use zsh
   config.vm.provision :shell, inline: "chsh -s /bin/zsh vagrant"
+    #Install Heroku toolbelt
+  config.vm.provision :shell, inline: "wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh"
   config.vm.provision :shell, path: "bootstrap.sh"
 
   # Disable automatic box update checking. If you disable this, then
