@@ -20,9 +20,11 @@ From a terminal prompt:
 * Ctrl-D to logout followed by `vagrant suspend` (save VM state)
 or `vagrant halt` ( power off VM )
 
-* To re-provision the vagrant box, just run --      `vagrant provision`
+* To re-provision the vagrant box, just run --      `vagrant provision` (Thid will run an apt-get update, apt-get upgrade, apt-get autoremove, and reinstall nodejs, git and zsh only if they were been uninstalled since the initial provisioning.)
 
 ###If the build was succesful, your virtualbox has node 7 with build-essential, git and zsh using a theme from [Oh-My-Zsh](http://ohmyz.sh/ "Oh-My-Zsh Website").
+
+Oh-My-Zsh has a number of helpful [shortcuts]("https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet") for shortening git commands and other frequent command line tasks.
 
 If using Mac or Linux host, remove the crlf configuration for git.config in bootstrap.sh.
 
