@@ -32,6 +32,8 @@ Trusty Tahr is the version of Ubuntu used on Heroku's Cedar-14 stack, so this is
 
 
 ` sudo apt-get remove heroku-toolbelt
+
+
   sudo rm /etc/apt/sources.list.d/heroku.list `
 
 and deleting the following line from the Vagrantfile:
