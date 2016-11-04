@@ -31,15 +31,15 @@ If using Mac or Linux host, remove the crlf configuration for git.config in boot
 Trusty Tahr is the version of Ubuntu used on Heroku's Cedar-14 stack, so this is a good development environment for testing Node applications to be deployed to Heroku. Heroku can be removed with:
 
 
-` sudo apt-get remove heroku-toolbelt
+   `sudo apt-get remove heroku-toolbelt`
+ 
 
-
-  sudo rm /etc/apt/sources.list.d/heroku.list `
+   `sudo rm /etc/apt/sources.list.d/heroku.list`
 
 and deleting the following line from the Vagrantfile:
 
 
-` config.vm.provision :shell, inline: "wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh"`
+  `config.vm.provision :shell, inline: "wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh"`
 
 
 
