@@ -20,7 +20,7 @@ From a terminal prompt:
 * Ctrl-D to logout followed by `vagrant suspend` (save VM state)
 or `vagrant halt` ( power off VM )
 
-* To re-provision the vagrant box, just run --      `vagrant provision` (Thid will run an apt-get update, apt-get upgrade, apt-get autoremove, and reinstall nodejs, git and zsh only if they were uninstalled since the initial provisioning.)
+* To re-provision the vagrant box, just run --      `vagrant provision` (This will run an apt-get update, apt-get upgrade, apt-get autoremove, and reinstall nodejs, git and zsh only if they were uninstalled since the initial provisioning.)
 
 ###If the build was succesful, your virtualbox has node 7 with build-essential, git and zsh using a theme from [Oh-My-Zsh](http://ohmyz.sh/ "Oh-My-Zsh Website").
 
