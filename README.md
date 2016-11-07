@@ -1,5 +1,7 @@
 # vagrant-node-git-zsh
 ### Creates a Linux-based Virtualbox running [Ubuntu 14.04.5 LTS](http://releases.ubuntu.com/trusty/ "Trusty Tahr"). Uses just a Vagrantfile and shell script to install Node, Git, Zsh (with Oh-My-Zsh), Heroku toolbelt, and mount a shared folder ( called "share") in the vagrant user's home folder.
+(So far only tested on a Windows host using [Cygwin] (https://www.cygwin.com/), but should work with Git bash or on a Mac host too.)
+
 
 Pre-requisites:
 
