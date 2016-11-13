@@ -8,5 +8,8 @@
 
 --maybe include scripting for generating new ssh keys
 --definitely make some scripts for my typical global npm packages
+-- update vagrantfile for port forwarding from guest to host
+
+
 
 
