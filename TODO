@@ -2,3 +2,11 @@
 
 //TODO test this on a Mac
 
+//TODO prompt user for heroku set up info on first (and only first provisioning)
+
+// save some additional shell scripts for particular use cases
+
+--maybe include scripting for generating new ssh keys
+--definitely make some scripts for my typical global npm packages
+
+
